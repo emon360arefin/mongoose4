@@ -16,6 +16,10 @@ app.use((req, res, next) => {
 })
 
 // routes
+app.get('/', (req, res) => {
+    res.send('Hello!!!')
+})
+
 app.use('/api/workouts', workoutRoutes)
 
 // Connect to DB
